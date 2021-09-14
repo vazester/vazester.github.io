@@ -55,11 +55,13 @@
                 let tagsCsv = songs[index].tags;
                 let tags = tagsCsv.split(',');
 
+                let songRequest = "<a href='mailto:DaveWeberMusic@gmail.com?subject=Song request: " + title + "&body=Please play " + title + " by " + artist + ".'>Request it</a>";
+
                 if (! tag) {
-                    $("#ulSongs").append("<li>" + title +  " -- <em>" + artist + "</em></li>");
+                    $("#ulSongs").append("<li>" + title +  " -- <em>" + artist + "</em>&nbsp:" + songRequest + "</li>");
                 } else {
                     if (arrayContains(tags, "D") || (arrayContains(tags, tag))) {
-                        $("#ulSongs").append("<li>" + title +  " -- <em>" + artist + "</em></li>");
+                        $("#ulSongs").append("<li>" + title +  " -- <em>" + artist + "</em>&nbsp:" + songRequest + "</li>");
                     }
                 }
             });
