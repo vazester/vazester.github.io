@@ -1,0 +1,80 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dave Weber Music Song List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align:center">Dave Weber Music Song List</h1>
+
+    <p>Select Dave's singing partner or choose <em>Dave solo</em> if Dave is performing alone:</p>
+    &nbsp;&nbsp;&nbsp;
+    <input type="radio" id="radSinger" name="radSinger" value="B"><label for="radSinger">Bailey</label>
+    <input type="radio" id="radSinger" name="radSinger" value="R"><label for="radSinger">Rebecca</label>
+    <input type="radio" id="radSinger" name="radSinger" value="L"><label for="radSinger">Lauren</label>
+    <input type="radio" id="radSinger" name="radSinger" value="N"><label for="radSinger">Daniela</label>
+    <input type="radio" id="radSinger" name="radSinger" value="D"><label for="radSinger">Dave solo</label>
+
+    <ul id="ulSongs">
+
+    </ul>
+
+    <script>
+
+        var songs = [
+            { title: "1985", artist: "Bowling for Soup", tags: "B"},
+            { title: "A Million Dreams", artist: "The Greatest Showman", tags: "B,L,N,R"},
+            { title: "All Too Well", artist: "Taylor Swift", tags: "B"},
+            { title: "All of Me", artist: "John Legend", tags: "D"},
+            { title: "All on Me", artist: "Devin Dawson", tags: "D"},
+            { title: "Always and Forever", artist: "Heatwave", tags: "D"},
+            { title: "How Deep Is Your Love", artist: "Heatwave", tags: "R"}
+        ];
+
+        $(function() {
+
+            $("#selSinger").change(function() {
+                let singerTag = $("#selSinger").val();
+                populateSongList(singerTag);
+            });
+
+            $('input[type=radio][name=radSinger]').change(function() {
+                let singerTag = this.value;
+                populateSongList(singerTag);
+            });
+
+        });
+
+        function populateSongList(tag) {
+            
+            $("#ulSongs").empty();
+
+            songs.forEach((num, index) => {
+                let title = songs[index].title;
+                let artist = songs[index].artist;
+                let tagsCsv = songs[index].tags;
+                let tags = tagsCsv.split(',');
+
+                if (! tag) {
+                    $("#ulSongs").append("<li>" + title +  " -- <em>" + artist + "</em></li>");
+                } else {
+                    if (arrayContains(tags, "D") || (arrayContains(tags, tag))) {
+                        $("#ulSongs").append("<li>" + title +  " -- <em>" + artist + "</em></li>");
+                    }
+                }
+            });
+        }
+
+        function arrayContains(arr, val) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == val) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+    </script>
+</body>
+</html>
