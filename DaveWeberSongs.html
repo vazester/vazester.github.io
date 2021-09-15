@@ -24,19 +24,23 @@
             font-size: 13px;
             font-weight: bold;
         }
+        .instruction {
+            font-size: 11px;
+        }
     </style>
 </head>
 <body>
     <h1>Dave Weber Music Song List</h1>
 
-    <p>Select Dave's singing partner or choose <em>Dave solo</em> if Dave is performing alone:</p>
-    <input type="radio" id="radSinger" name="radSinger" value="B"><label for="radSinger">Bailey</label>
-    <input type="radio" id="radSinger" name="radSinger" value="R"><label for="radSinger">Rebecca</label>
-    <input type="radio" id="radSinger" name="radSinger" value="L"><label for="radSinger">Lauren</label>
-    <input type="radio" id="radSinger" name="radSinger" value="N"><label for="radSinger">Daniela</label>
-    <input type="radio" id="radSinger" name="radSinger" value="D"><label for="radSinger">Dave solo</label>
+    <p>Select Dave's singing partner below.<br>
+        <span class="instruction">Or, if Dave is performing alone, choose <em>Dave solo</em>.</span></p>
+    <label><input type="radio" id="radSinger" name="radSinger" value="B">Bailey</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="R">Rebecca</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="L">Lauren</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="N">Daniela</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="D">Dave solo</label>
 
-    <p>Click on the song you wish to request</p>
+    <p id="pRequestInstruction" style="display:none;">Click on the song you wish to request.</p>
 
     <ol id="ulSongs">
 
@@ -145,7 +149,7 @@
             { title: "I Will Remember You", artist: "Sarah McLaughlin", tags: 'S'},
             { title: "IDK You Yet", artist: "Alexander 23", tags: 'B'},
             { title: "If I Ain't Got You", artist: "Alicia Keys", tags: 'B,R'},
-            { title: "If You Don't Know Me by Now- Melvin Gordon (Stan Taylor arr.)", artist: "", tags: 'B'},
+            { title: "If You Don't Know Me by Now", artist: "Melvin Gordon (Stan Taylor arr.)", tags: 'B'},
             { title: "I'll be Around", artist: "Spininers", tags: 'D,R'},
             { title: "I'll be There", artist: "Jackson Five (Mariah Carey arr.)", tags: 'B'},
             { title: "I'll be There for You (Friends theme)", artist: "The Rembrandts", tags: 'B'},
@@ -247,7 +251,7 @@
             { title: "Steal My Kisses", artist: "Ben Harper", tags: 'B'},
             { title: "Still Haven't Found", artist: "U2", tags: 'B,D,L,R'},
             { title: "Stressed Out", artist: "Twenty One Pilots", tags: 'B'},
-            { title: "Sunday Morning", artist: "Marron 5", tags: 'B,L,N'},
+            { title: "Sunday Morning", artist: "Maroon 5", tags: 'B,L,N'},
             { title: "Sunshine", artist: "Jonathan Edwards", tags: 'D'},
             { title: "Sunshine On My Shoulders", artist: "John Denver", tags: 'D'},
             { title: "Sweeet Caroline", artist: "Neal Diamond", tags: 'B,D'},
@@ -334,6 +338,7 @@
                     }
                 }
             });
+            $("#pRequestInstruction").show();
         }
 
         function arrayContains(arr, val) {
@@ -345,7 +350,6 @@
             return false;
         }
 
-        
     </script>
 </body>
 </html>
