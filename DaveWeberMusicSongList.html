@@ -2,265 +2,355 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dave Weber Music Song List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+        }
+        li {
+            font-size: 14px;
+        }
+        label {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .instruction {
+            font-size: 11px;
+            margin-left: 15px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align:center">Dave Weber Music Song List</h1>
-    <p>Dave is fortunate to perform in duos with a few wonderful female vocalists. The below list is superset of the songs he performs with those singers.</p>
+    <h1>Dave Weber Music Song List</h1>
 
-    <ul>
-        <li><span style="font-size:14px;">1985 - <em>Bowling for Soup</em></span></li>
-        <li><span style="font-size:14px;">A Million Dreams - <em>The Greatest Showman</em></span></li>
-        <li><span style="font-size:14px;">A Night Like This - <em>Caro Emerald</em></span></li>
-        <li><span style="font-size:14px;">A Thousand Years - <em>Christina Perri</em></span></li>
-        <li><span style="font-size:14px;">All I've Ever Known - <em>Hadestown</em></span></li>         
-        <li><span style="font-size:14px;">All Of Me - <em>John Legend</em></span></li>
-        <li><span style="font-size:14px;">All On Me - <em>Devin Dawson</em></span></li>
-        <li><span style="font-size:14px;">Always and Forever - <em>Heatwave</em></span></li>
-        <li><span style="font-size:14px;">Always Remember Us This Way - <em>Lady Gaga</em></span></li>
-        <li><span style="font-size:14px;">American the Beautiful - <em>Traditional</em></span></li>
-        <li><span style="font-size:14px;">Angie - <em>Roling Stones</em></span></li>
-        <li><span style="font-size:14px;">At Last - <em>Etta James</em></span></li>      
-        <li><span style="font-size:14px;">Autumn Leaves - <em>Nat King Cole arr.</em></span></li>           
-        <li><span style="font-size:14px;">Babylon - <em>David Gray</em></span></li>
-        <li><span style="font-size:14px;">Back It Up - <em>Caro Emerald</em></span></li>    
-        <li><span style="font-size:14px;">Backyard Boy - <em>Claire Rosinkranz</em></span></li>         
-        <li><span style="font-size:14px;">Bellyache - <em>Billie Eilish</em></span></li>
-        <li><span style="font-size:14px;">Ben - <em>Michael Jackson</em></span></li>         
-        <li><span style="font-size:14px;">Behind Blue Eyes - <em>The Who</em></span></li>
-        <li><span style="font-size:14px;">Best Part - <em>Daniel Ceaser and H.E.R.</em></span></li>
-        <li><span style="font-size:14px;">Beverly Hills - <em>Weezer</em></span></li>
-        <li><span style="font-size:14px;">Brand New - <em>Ben Rector</em></span></li>
-        <li><span style="font-size:14px;">Breakeven - <em>The Script (Colbi Caillat arr.)</em></span></li>
-        <li><span style="font-size:14px;">Brown Eyed Girl - <em>Van Morrison</em></span></li> 
-        <li><span style="font-size:14px;">Bubbly - <em>Colbie Caillat</em></span></li>         
-        <li><span style="font-size:14px;">Can I Be Him? - <em>James Arthur</em></span></li>         
-        <li><span style="font-size:14px;">Can't Hurry Love - <em>The Supremes</em></span></li>
-        <li><span style="font-size:14px;">Can&#39;t Stop This Feeling - <em>Justin Timberlake</em></span></li>
-        <li><span style="font-size:14px;">Can&#39;t Take My Eyes Off Of You - <em>Frankie Valli</em></span></li>       
-        <li><span style="font-size:14px;">Cathedrals - <em>Jump, Little Children</em></span></li>        
-        <li><span style="font-size:14px;">Closer to Fine - <em>Indigo Girls</em></span></li>
-        <li><span style="font-size:14px;">Collide - <em>Howie Day</em></span></li>
-        <li><span style="font-size:14px;">Creep - <em>Radiohead</em></span></li>
-        <li><span style="font-size:14px;">Country Roads - <em>John Denver</em></span></li>
-        <li><span style="font-size:14px;">Crazy - <em>Gnarles Barkley</em></span></li>
-        <li><span style="font-size:14px;">Cruisin&#39; - <em>Smoky Robinson (Paltrow &amp; Lewis arr.)</em></span></li>
-        <li><span style="font-size:14px;">Dancing Queen - <em>ABBA</em></span></li>
-        <li><span style="font-size:14px;">Daughters - <em>John Mayer</em></span></li>
-        <li><span style="font-size:14px;">Desperado - <em>Eagles</em></span></li>
-        <li><span style="font-size:14px;">Don't Know Why - <em>Norah Jones</em></span></li>
-        <li><span style="font-size:14px;">Don't Dream It's Over - <em>Crowded House (Sixpense arr.)</em></span></li>
-        <li><span style="font-size:14px;">Don't You Forget About Me - <em>Simple Minds</em></span></li>
-        <li><span style="font-size:14px;">Orift Away - <em>Dobie Gray</em></span></li>        
-        <li><span style="font-size:14px;">Oriver's License - <em>Olivia Rodrigo</em></span></li>        
-        <li><span style="font-size:14px;">Driver's Song - <em>John LT</em></span></li>      
-        <li><span style="font-size:14px;">Drops of Jupiter - <em>Train</em></span></li>      
-        <li><span style="font-size:14px;">Easy - <em>Commodores</em></span></li>
-        <li><span style="font-size:14px;">Edelweiss - <em>Sound of Music</em></span></li>
-        <li><span style="font-size:14px;">Embraceable You - <em>Ella Fitzgerald arr.</em></span></li>
-        <li><span style="font-size:14px;">Everlong - <em>Foo Fighters</em></span></li>
-        <li><span style="font-size:14px;">Everybody Wants to Rule the World - <em>Tears for Fears</em></span></li>            
-        <li><span style="font-size:14px;">Everything I Know - <em>In the Heights</em></span></li>          
-        <li><span style="font-size:14px;">Everything You Want - <em>Veritical Horizon</em></span></li>           
-        <li><span style="font-size:14px;">Fallin for You - <em>Colbie Caillat</em></span></li>
-        <li><span style="font-size:14px;">Falling Slowly - <em>Glen Hansard (Once)</em></span></li>
-        <li><span style="font-size:14px;">Fantasy - <em>Earth Wind and Fire</em></span></li>
-        <li><span style="font-size:14px;">Fat Bottomed Girls - <em>Queen</em></span></li>
-        <li><span style="font-size:14px;">Fields of Gold - <em>Sting</em></span></li>
-        <li><span style="font-size:14px;">Fever - <em>Peggy Lee</em></span></li>
-        <li><span style="font-size:14px;">First Heartbreak - <em>Tori Kelly</em></span></li>
-        <li><span style="font-size:14px;">Fix You - <em>Coldplay (Boyce Avenue arr.)</em></span></li>
-        <li><span style="font-size:14px;">Fire and Rain - <em>James Taylor</em></span></li>
-        <li><span style="font-size:14px;">For Good - <em>Wicked</em></span></li> 
-        <li><span style="font-size:14px;">Found Out About You - <em>Gin Blossoms</em></span></li>         
-        <li><span style="font-size:14px;">Free Fallin&rsquo; - <em>Tom Petty (John Mayer arr.)</em></span></li>
-        <li><span style="font-size:14px;">Friday I'm in Love - <em>The Cure</em></span></li>
-        <li><span style="font-size:14px;">Games People Play - <em>Spinners</em></span></li>
-        <li><span style="font-size:14px;">Georgia on My Mind - <em>Ray Charles</em></span></li>
-        <li><span style="font-size:14px;">Girl Crush - <em>Little Big Town</em></span></li>         
-        <li><span style="font-size:14px;">Give a Little Bit - <em>Supertramp</em></span></li>
-        <li><span style="font-size:14px;">God Only Knows - <em>The Beach Boys</em></span></li>
-        <li><span style="font-size:14px;">Good Riddance - <em>Green Day</em></span></li>
-        <li><span style="font-size:14px;">Gravity - <em>Sara Bareilles and John Legend</em></span></li>
-        <li><span style="font-size:14px;">Have You Ever Seen the Rain - <em>Creedence Clearwater Revival</em></span></li>            
-        <li><span style="font-size:14px;">Heart of the Matter - <em>Don Henley</em></span></li>
-        <li><span style="font-size:14px;">Heather - <em>Conan Gray</em></span></li>
-        <li><span style="font-size:14px;">Hello It's Me - <em>Todd Rundgren</em></span></li>
-        <li><span style="font-size:14px;">Hey Soul Sister - <em>Train</em></span></li>
-        <li><span style="font-size:14px;">Ho Hey - <em>Lumineers</em></span></li>
-        <li><span style="font-size:14px;">Hollow - <em>Tori Kelly</em></span></li>         
-        <li><span style="font-size:14px;">Home - <em>Phillip Phillips</em></span></li>
-        <li><span style="font-size:14px;">How Deep is Your Love - <em>The Bee Gees</em></span></li>
-        <li><span style="font-size:14px;">Hopelessly Devoted to You - <em>Grease</em></span></li>
-        <li><span style="font-size:14px;">I Can See Clearly Now - <em>Johnny Nash</em></span></li>        
-        <li><span style="font-size:14px;">I Can&#39;t Make You Love Me - <em>Bonnie Raitt</em></span></li>        
-        <li><span style="font-size:14px;">I Lost a Friend - <em>Finneas</em></span></li>   
-        <li><span style="font-size:14px;">I Run to You - <em>Lady A</em></span></li>        
-        <li><span style="font-size:14px;">I Say a Little Prayer - <em>Lianne La Havas</em></span></li>
-        <li><span style="font-size:14px;">I Wanna Stay Home - <em>Jellyfish</em></span></li>
-        <li><span style="font-size:14px;">I Will Remember You - <em>Sarah McLaughlin</em></span></li>		
-        <li><span style="font-size:14px;">IDK You Yet - <em>Alexander 23</em></span></li>
-        <li><span style="font-size:14px;">If I Ain't Got You - <em>Alicia Keys</em></span></li>
-        <li><span style="font-size:14px;">If You Don't Know Me by Now- <em>Melvin Gordon (Stan Taylor arr.)</em></span></li>         
-        <li><span style="font-size:14px;">I&#39;ll be Around - <em>Spininers</em></span></li>
-        <li><span style="font-size:14px;">I&#39;ll be There - <em>Jackson Five (Mariah Carey arr.)</em></span></li>
-        <li><span style="font-size:14px;">I'll be There for You (Friends theme) - <em>The Rembrandts</em></span></li>
-        <li><span style="font-size:14px;">I'm Gonna Be (500 Miles) - <em>The Proclaimers</em></span></li>
-        <li><span style="font-size:14px;">I'm One - <em>The Who</em></span></li>
-        <li><span style="font-size:14px;">I'm Yours - <em>Jason Mraz</em></span></li>
-        <li><span style="font-size:14px;">I'm Eighteen - <em>Alice Cooper</em></span></li>
-        <li><span style="font-size:14px;">Isn't She Lovely - <em>Stevie Wonder</em></span></li>
-        <li><span style="font-size:14px;">It&#39;s Too late - <em>Carole King</em></span></li>
-        <li><span style="font-size:14px;">Just for a Moment - <em>Olivia Rodrigo &amp; Joshua Bassett</em></span></li>
-        <li><span style="font-size:14px;">Just Give Me a Reason - <em>Pink</em></span></li>
-        <li><span style="font-size:14px;">Just My Imagination - <em>The Temptations</em></span></li>
-        <li><span style="font-size:14px;">Just The Way You Are - <em>Billy Joel</em></span></li>
-        <li><span style="font-size:14px;">Just To See You Smile - <em>Tim McGraw</em></span></li>
-        <li><span style="font-size:14px;">Killer Queen - <em>Queen</em></span></li>
-        <li><span style="font-size:14px;">Killing Me Softly - <em>Roberta Flack</em></span></li>
-        <li><span style="font-size:14px;">Kiss Me - <em>Sixpense None the Richer</em></span></li>
-        <li><span style="font-size:14px;">Landslide - <em>Fleetwood Mac</em></span></li>
-        <li><span style="font-size:14px;">Let's Stay Together - <em>Al Green</em></span></li>
-        <li><span style="font-size:14px;">Life is a Highway - <em>Rascal Flatts</em></span></li>
-        <li><span style="font-size:14px;">Lights - <em>Journey</em></span></li>        
-        <li><span style="font-size:14px;">Like I'm Gonna Lose You - <em>Meghan Trainor & John Legend</em></span></li>        
-        <li><span style="font-size:14px;">Live Forever - <em>Drew Holcomb and the Neighbors</em></span></li>
-        <li><span style="font-size:14px;">Living on a Prayer - <em>Bon Jovi</em></span></li>
-        <li><span style="font-size:14px;">Location Unknown - <em>Honne &amp; BEKA</em></span></li>        
-        <li><span style="font-size:14px;">Lonely Boy - <em>The Black Keys</em></span></li>        
-        <li><span style="font-size:14px;">Long and Winding Road - <em>The Beatles</em></span></li>        
-        <li><span style="font-size:14px;">Long December - <em>Counting Crows</em></span></li>
-        <li><span style="font-size:14px;">Love is a Losing Game - <em>Amy Winehouse</em></span></li>
-        <li><span style="font-size:14px;">Love is a Wild Thing - <em>Kacey Musgraves</em></span></li>
-        <li><span style="font-size:14px;">Love Reign O'er Me - <em>The Who</em></span></li>
-        <li><span style="font-size:14px;">Love Song - <em>Adele</em></span></li>
-        <li><span style="font-size:14px;">Love Song - <em>Sara Bareilles</em></span></li>        
-        <li><span style="font-size:14px;">Love Story - <em>Taylor Swift</em></span></li>
-        <li><span style="font-size:14px;">Lyin Eyes - <em>Eagles</em></span></li>
-        <li><span style="font-size:14px;">Make You Feel My Love - <em>Bob Dylan (Adele arr.)</em></span></li>
-        <li><span style="font-size:14px;">Manhattan - <em>Sara Bareilles</em></span></li>
-        <li><span style="font-size:14px;">Man in the Mirror - <em>Michael Jackson</em></span></li>
-        <li><span style="font-size:14px;">Marry You - <em>Bruno Mars</em></span></li>
-        <li><span style="font-size:14px;">Me and Bobby McGee - <em>Janis Joplin</em></span></li>
-        <li><span style="font-size:14px;">Melissa - <em>Alman Brothers</em></span></li>
-        <li><span style="font-size:14px;">Missing You - <em>All Time Low</em></span></li>    
-        <li><span style="font-size:14px;">My Church - <em>Maren Morris</em></span></li>
-        <li><span style="font-size:14px;">My Girl - <em>The Temptations</em></span></li>    
-        <li><span style="font-size:14px;">My Heart Will Go On - <em>Titanic</em></span></li>         
-        <li><span style="font-size:14px;">Meant To Be - <em>Bebe Rexha and Florida Georgia Line</em></span></li>
-        <li><span style="font-size:14px;">More Today Than Yesterday - <em>The Spiral Staircase</em></span></li>  
-        <li><span style="font-size:14px;">My Cherie Amour - <em>Stevie Wonder</em></span></li> 
-        <li><span style="font-size:14px;">Need You Now - <em>Lady A</em></span></li>         
-        <li><span style="font-size:14px;">Nervous - <em>Gavin James</em></span></li>         
-        <li><span style="font-size:14px;">Never Can Say Goodbye - <em>Jackson 5</em></span></li>         
-        <li><span style="font-size:14px;">Never Enough - <em>The Greatest Showman</em></span></li>
-        <li><span style="font-size:14px;">Never Gonna Give You Up - <em>Rick Astley</em></span></li>
-        <li><span style="font-size:14px;">Never Tear Us Apart - <em>INXS</em></span></li>
-        <li><span style="font-size:14px;">New York State of Mind - <em>Billy Joel</em></span></li>
-        <li><span style="font-size:14px;">Nowhere to Run - <em>Martha Reeves and the Vandellas</em></span></li>         
-        <li><span style="font-size:14px;">Night Changes - <em>One Direction</em></span></li>       
-        <li><span style="font-size:14px;">Nowhere to Run - <em>Martha Reeves and the Vandellas</em></span></li>       
-        <li><span style="font-size:14px;">One Hand in My Pocket - <em>Alanis Morissette</em></span></li>     
-        <li><span style="font-size:14px;">One Man Band - <em>Old Dominion</em></span></li>
-        <li><span style="font-size:14px;">Ooh Baby Baby - <em>Smokey Robinson</em></span></li>
-        <li><span style="font-size:14px;">Our Day Will Come - <em>Amy Winehouse</em></span></li>
-        <li><span style="font-size:14px;">Out Here on my Own - <em>Fame</em></span></li>
-        <li><span style="font-size:14px;">Paint it Black - <em>Siobhan Magnus arr.</em></span></li>        
-        <li><span style="font-size:14px;">Peace Bomb - <em>Eric Scott</em></span></li>        
-        <li><span style="font-size:14px;">Peace of Mind - <em>Boston</em></span></li>        
-        <li><span style="font-size:14px;">Peaceful Easy Feeling - <em>Eagles</em></span></li>        
-        <li><span style="font-size:14px;">People Get Ready - <em>Eva Casidy, Rod Stewart, Jeff Beck arr.</em></span></li>
-        <li><span style="font-size:14px;">Photograph - <em>Ed Sheeran</em></span></li>
-        <li><span style="font-size:14px;">Poison and Wine - <em>The Civil Wars</em></span></li>
-        <li><span style="font-size:14px;">Pretty Maids All in a Row - <em>Eagles</em></span></li>
-        <li><span style="font-size:14px;">Put Your Records On - <em>Corinne Bailey Rae</em></span></li>
-        <li><span style="font-size:14px;">Reelin' in the Years - <em>Steely Dan</em></span></li>
-        <li><span style="font-size:14px;">Ride - <em>Twenty One Pilots</em></span></li>
-        <li><span style="font-size:14px;">Riptide - <em>Vance Joy</em></span></li>
-        <li><span style="font-size:14px;">River - <em>Leon Bridges</em></span></li>
-        <li><span style="font-size:14px;">Rolling in the Deep - <em>Adele</em></span></li>
-        <li><span style="font-size:14px;">Rocket Man - <em>Elton John</em></span></li>
-        <li><span style="font-size:14px;">Route 66 - <em>Chuck Berry</em></span></li>         
-        <li><span style="font-size:14px;">Safe Place to Land - <em>Sara Bareilles and John Legend</em></span></li>
-        <li><span style="font-size:14px;">Sara, Smile - <em>Hall and Oats</em></span></li>
-        <li><span style="font-size:14px;">Saturday in the Park - <em>Chicago</em></span></li>
-        <li><span style="font-size:14px;">Seasons of Love - <em>Rent</em></span></li>       
-        <li><span style="font-size:14px;">See You Again - <em>Wiz Khalifa (Boyce Avenue arr.)</em></span></li>
-        <li><span style="font-size:14px;">Shallow - <em>Bradley Cooper and Lady Gaga</em></span></li>
-        <li><span style="font-size:14px;">She Is Love - <em>Parachute</em></span></li>         
-        <li><span style="font-size:14px;">She Used to be Mine - <em>Sara Bareilles (Waitress)</em></span></li>         
-        <li><span style="font-size:14px;">Shower the People - <em>James Taylor</em></span></li>
-        <li><span style="font-size:14px;">Six Feet Under - <em>Billie Eilish</em></span></li>
-        <li><span style="font-size:14px;">Sittin&rsquo; on the Dock of the Bay - <em>Otis Redding</em></span></li>
-        <li><span style="font-size:14px;">Slide - <em>Goo Goo Dolls</em></span></li>          
-        <li><span style="font-size:14px;">Smile - <em>Nat King Cole arr.</em></span></li>           
-        <li><span style="font-size:14px;">Snapback - <em>Old Dominion</em></span></li>
-        <li><span style="font-size:14px;">So Far Away - <em>Carole King</em></span></li>
-        <li><span style="font-size:14px;">Soak Up the Sun - <em>Sheryl Crow</em></span></li>
-        <li><span style="font-size:14px;">Sola - <em>Jessie Reyez</em></span></li>
-        <li><span style="font-size:14px;">Somebody Like You - <em>Keith Urban</em></span></li>
-        <li><span style="font-size:14px;">Somebody To Love - <em>Queen</em></span></li>
-        <li><span style="font-size:14px;">Something Just Like This - <em>The Chainsmokers and Coldplay</em></span></li>
-        <li><span style="font-size:14px;">Somewhere Only We Know - <em>Keane</em></span></li>
-        <li><span style="font-size:14px;">Somewhere Over the Rainbow - <em>Ariana Grande arr.</em></span></li>          
-        <li><span style="font-size:14px;">Stand By Me - <em>Ben E. King</em></span></li>
-        <li><span style="font-size:14px;">Stay- <em>Rihanna</em></span></li>        
-        <li><span style="font-size:14px;">Steal My Kisses - <em>Ben Harper</em></span></li>        
-        <li><span style="font-size:14px;">Still Haven't Found - <em>U2</em></span></li>   
-        <li><span style="font-size:14px;">Stressed Out - <em>Twenty One Pilots</em></span></li>   
-        <li><span style="font-size:14px;">Sugar - <em>Maroon 5</em></span></li>         
-        <li><span style="font-size:14px;">Sunday Morning - <em>Marron 5</em></span></li>         
-        <li><span style="font-size:14px;">Sunshine - <em>Jonathan Edwards</em></span></li>
-        <li><span style="font-size:14px;">Sweeet Caroline - <em>Neal Diamond</em></span></li>
-        <li><span style="font-size:14px;">Tennessee Whiskey - <em>Chris Stapleton</em></span></li>
-        <li><span style="font-size:14px;">That Thing You Do - <em>The Oneders</em></span></li>
-        <li><span style="font-size:14px;">Time After Time - <em>Cyndi Lauper</em></span></li>
-        <li><span style="font-size:14px;">Times are Hard for Dreamers - <em>Amélie</em></span></li>
-        <li><span style="font-size:14px;">The Joke - <em>Brandi Carlile</em></span></li>
-        <li><span style="font-size:14px;">There's a World - <em>Next to Normal</em></span></li>
-        <li><span style="font-size:14px;">This Town - <em>Niall Horan</em></span></li>
-        <li><span style="font-size:14px;">The Bed I Made - <em>Allen Stone</em></span></li>        
-        <li><span style="font-size:14px;">The Middle - <em>Jimmy Eat World</em></span></li>
-        <li><span style="font-size:14px;">The Only Exception - <em>Paramore</em></span></li>        
-        <li><span style="font-size:14px;">Thinking Out Loud - <em>Ed Sheeran</em></span></li>
-        <li><span style="font-size:14px;">This City - <em>Sam Fischer</em></span></li>
-        <li><span style="font-size:14px;">To Be With You - <em>Mr. Big</em></span></li>
-        <li><span style="font-size:14px;">Torn - <em>Natalie Imbruglia</em></span></li>
-        <li><span style="font-size:14px;">Treasure - <em>Bruno Mars</em></span></li>
-        <li><span style="font-size:14px;">Unaware - <em>Allen Stone</em></span></li>
-        <li><span style="font-size:14px;">Unlonely - <em>Jason Mraz</em></span></li>        
-        <li><span style="font-size:14px;">Valerie - <em>Amy Winehouse</em></span></li>
-        <li><span style="font-size:14px;">Vineyard - <em>Jackopierce</em></span></li>
-        <li><span style="font-size:14px;">Waiting on the World to Change - <em>John Mayer</em></span></li>
-        <li><span style="font-size:14px;">Walking on Sunshine - <em>Katrina and the Waves</em></span></li>         
-        <li><span style="font-size:14px;">Waterfalls - <em>T.L.C</em></span></li>        
-        <li><span style="font-size:14px;">Watermellon Sugar - <em>Harry Styles</em></span></li>
-        <li><span style="font-size:14px;">We Belong - <em>Pat Benatar</em></span></li>
-        <li><span style="font-size:14px;">What's Going On? - <em>Marvin Gaye</em></span></li>	
-        <li><span style="font-size:14px;">What's Up? - <em>Four Non Blondes</em></span></li>		
-        <li><span style="font-size:14px;">What You Won't Do For Love - <em>Bobby Caldwell</em></span></li>
-        <li><span style="font-size:14px;">When We Were Young - <em>Adele</em></span></li>
-        <li><span style="font-size:14px;">Wildfire - <em>Michael Martin Murphey</em></span></li>        
-        <li><span style="font-size:14px;">Will You Still Love Me Tomorrow - <em>Carole King</em></span></li>        
-        <li><span style="font-size:14px;">Who Says You Can&rsquo;t Go Home? - <em>Bon Jovi &amp; Jennifer Nettles</em></span></li>
-        <li><span style="font-size:14px;">Who's Loving You? - <em>Jackson 5</em></span></li>
-        <li><span style="font-size:14px;">Wild Horses - <em>The Rolling Stones (Sundays&#39; arr.)</em></span></li>
-        <li><span style="font-size:14px;">Wine We Drink - <em>Drew Holcomb and the Neighbors</em></span></li>
-        <li><span style="font-size:14px;">Wonderful Tonight - <em>Eric Clapton</em></span></li>        
-        <li><span style="font-size:14px;">Wonderful World - <em>Cam Cooke</em></span></li>        
-        <li><span style="font-size:14px;">Wonderwall - <em>Oasis</em></span></li>
-        <li><span style="font-size:14px;">Why'd You Only Call Me When You're High - <em>Arctic Monkeys</em></span></li>
-        <li><span style="font-size:14px;">Yellow - <em>Coldplay</em></span></li>
-        <li><span style="font-size:14px;">Yes, I'm Ready - <em>Barbara Mason</em></span></li>
-        <li><span style="font-size:14px;">Yesterday - <em>The Beatles</em></span></li>
-        <li><span style="font-size:14px;">You Can't Always Get What You Want - <em>Rolling Stones</em></span></li>
-        <li><span style="font-size:14px;">You Get What You Give - <em>New Radicals</em></span></li>
-        <li><span style="font-size:14px;">You Know I'm No Good - <em>Amy Winehouse</em></span></li>
-        <li><span style="font-size:14px;">You Say - <em>Lauren Daigle</em></span></li>
-        <li><span style="font-size:14px;">You Will Find Me - <em>Andrew Ripp</em></span></li>
-        <li><span style="font-size:14px;">You've Got a Friend - <em>James Taylor</em></span></li>
-		<li><span style="font-size:14px;">Your Song - <em>Elton John</em></span></li>
-    </ul>
-    
+    <p>Select Dave's singing partner below.<br>
+        <span class="instruction">Or, if Dave is performing alone, choose <em>Dave solo</em>.</span></p>
+    <label><input type="radio" id="radSinger" name="radSinger" value="B">Bailey</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="R">Rebecca</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="L">Lauren</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="N">Daniela</label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="D">Dave solo</label>
+
+    <p id="pRequestInstruction" style="display:none;">Click on the song you wish to request.</p>
+
+    <ol id="ulSongs">
+
+    </ol>
+
+    <script>
+
+        var songs = [
+            { title: "1985", artist: "Bowling for Soup", tags: 'B'},
+            { title: "3AM", artist: "Matchbox 20", tags: 'D'},
+            { title: "A Million Dreams", artist: "The Greatest Showman", tags: 'L,N,R'},
+            { title: "A Night Like This", artist: "Caro Emerald", tags: 'R'},
+            { title: "A Thousand Years", artist: "Christina Perri", tags: 'R'},
+            { title: "Ain't No Rest for the Wicked", artist: "Cage the Elephant", tags: 'A,B'},
+            { title: "All I've Ever Known", artist: "Hadestown", tags: 'A'},
+            { title: "All Of Me", artist: "John Legend", tags: 'D,R'},
+            { title: "All On Me", artist: "Devin Dawson", tags: 'B,D,L,R'},
+            { title: "All Too Well", artist: "Taylor Swift", tags: 'B'},
+            { title: "Always and Forever", artist: "Heatwave", tags: 'D'},
+            { title: "Always Remember Us This Way", artist: "Lady Gaga", tags: 'R'},
+            { title: "American the Beautiful", artist: "Traditional", tags: 'B'},
+            { title: "Angie", artist: "Roling Stones", tags: 'D'},
+            { title: "At Last", artist: "Etta James", tags: 'A,B,L'},
+            { title: "Autumn Leaves", artist: "Nat King Cole arr.", tags: 'A'},
+            { title: "Babylon", artist: "David Gray", tags: 'D,L,R'},
+            { title: "Back It Up", artist: "Caro Emerald", tags: 'R'},
+            { title: "Backyard Boy", artist: "Claire Rosinkranz", tags: 'A'},
+            { title: "Behind Blue Eyes", artist: "The Who", tags: 'D'},
+            { title: "Bellyache", artist: "Billie Eilish", tags: 'B,R'},
+            { title: "Ben", artist: "Michael Jackson", tags: 'A'},
+            { title: "Best Part", artist: "Daniel Ceaser and H.E.R.", tags: 'A,B,D,R'},
+            { title: "Better Man", artist: "Little Big Town", tags: 'J'},
+            { title: "Beverly Hills", artist: "Weezer", tags: 'B,N'},
+            { title: "Black Horse and a Cherry Tree", artist: "KT Tunstall", tags: 'B,L'},
+            { title: "Boys of Summer", artist: "Don Henley", tags: 'D'},
+            { title: "Brand New", artist: "Ben Rector", tags: 'D'},
+            { title: "Brave", artist: "Sara Bareilles", tags: 'L'},
+            { title: "Breakeven", artist: "The Script (Colbi Caillat arr.)", tags: 'S'},
+            { title: "Brown Eyed Girl", artist: "Van Morrison", tags: 'B'},
+            { title: "Bubbly", artist: "Colbie Caillat", tags: 'B,R'},
+            { title: "Can I Be Him?", artist: "James Arthur", tags: 'B'},
+            { title: "Can't Hurry Love", artist: "The Supremes", tags: 'B'},
+            { title: "Can't Stop This Feeling", artist: "Justin Timberlake", tags: 'B'},
+            { title: "Can't Take My Eyes Off Of You", artist: "Frankie Valli", tags: 'D,B,R'},
+            { title: "Cathedrals", artist: "Jump, Little Children", tags: 'D'},
+            { title: "Closer to Fine", artist: "Indigo Girls", tags: 'R'},
+            { title: "Collide", artist: "Howie Day", tags: 'B,D,L,R'},
+            { title: "Country Roads", artist: "John Denver", tags: 'B,D'},
+            { title: "Crazy", artist: "Gnarles Barkley", tags: 'B,D,R'},
+            { title: "Creep", artist: "Radiohead", tags: 'B,L,N'},
+            { title: "Cruisin'", artist: "Smoky Robinson (Paltrow & Lewis arr.)", tags: 'D,L,R'},
+            { title: "Dancing Queen", artist: "ABBA", tags: 'B,L,R'},
+            { title: "Daughters", artist: "John Mayer", tags: 'D'},
+            { title: "Desperado", artist: "Eagles", tags: 'B'},
+            { title: "Don't Dream It's Over", artist: "Crowded House (Sixpense arr.)", tags: 'N,R'},
+            { title: "Don't Know Why", artist: "Norah Jones", tags: 'B,L,R'},
+            { title: "Don't You Forget About Me", artist: "Simple Minds", tags: 'B'},
+            { title: "Drift Away", artist: "Dobie Gray", tags: 'B,D'},
+            { title: "Driver's Song", artist: "John LT", tags: 'D,R'},
+            { title: "Driver's License", artist: "Olivia Rodrigo", tags: 'B'},
+            { title: "Drops of Jupiter", artist: "Train", tags: 'B,L,R'},
+            { title: "Easy", artist: "Commodores", tags: 'D,L,R'},
+            { title: "Edelweiss", artist: "Sound of Music", tags: 'B,D,R'},
+            { title: "Embraceable You", artist: "Ella Fitzgerald arr.", tags: 'A'},
+            { title: "Emmylou", artist: "First Aid Kit", tags: 'L'},
+            { title: "Everlong", artist: "Foo Fighters", tags: 'D'},
+            { title: "Everybody Wants to Rule the World", artist: "Tears for Fears", tags: 'B,D,R'},
+            { title: "Everything I Know", artist: "In the Heights", tags: 'A,N'},
+            { title: "Everything You Want", artist: "Veritical Horizon", tags: 'D'},
+            { title: "Extraordinary Magic", artist: "Ben Rector", tags: 'D'},
+            { title: "Fallin for You", artist: "Colbie Caillat", tags: 'B'},
+            { title: "Falling Slowly", artist: "Glen Hansard (Once)", tags: 'B,D,L,R'},
+            { title: "Fantasy", artist: "Earth Wind and Fire", tags: 'B'},
+            { title: "Fat Bottomed Girls", artist: "Queen", tags: 'B'},
+            { title: "Fever", artist: "Peggy Lee", tags: 'B,R'},
+            { title: "Fields of Gold", artist: "Sting", tags: 'D,R'},
+            { title: "Fire and Rain", artist: "James Taylor", tags: 'D'},
+            { title: "Fix You", artist: "Coldplay (Boyce Avenue arr.)", tags: 'B,R'},
+            { title: "For Good", artist: "Wicked", tags: 'B,N'},
+            { title: "Friday I'm in Love", artist: "The Cure", tags: 'D,B,L'},
+            { title: "Games People Play", artist: "Spinners", tags: 'D,R'},
+            { title: "Georgia on My Mind", artist: "Ray Charles", tags: 'D'},
+            { title: "Girl Crush", artist: "Little Big Town", tags: 'B'},
+            { title: "Give a Little Bit", artist: "Supertramp", tags: 'B'},
+            { title: "God Only Knows", artist: "The Beach Boys", tags: 'D,L,R'},
+            { title: "Good Kisser", artist: "Lake Street Dive", tags: 'L'},
+            { title: "Good Riddance", artist: "Green Day", tags: 'B'},
+            { title: "Gravity", artist: "Sara Bareilles and John Legend", tags: 'L'},
+            { title: "Grow As We Go", artist: "Ben Platt", tags: 'B,L'},
+            { title: "Have You Ever Seen the Rain", artist: "Creedence Clearwater Revival", tags: 'B,L'},
+            { title: "Heard it Through the Grapevine", artist: "Marvin Gaye", tags: 'L'},
+            { title: "Heart of the Matter", artist: "Don Henley", tags: 'S'},
+            { title: "Heather", artist: "Conan Gray", tags: 'B'},
+            { title: "Hello It's Me", artist: "Todd Rundgren", tags: 'D,R'},
+            { title: "Hey Soul Sister", artist: "Train", tags: 'B,L,R'},
+            { title: "Ho Hey", artist: "Lumineers", tags: 'B,N'},
+            { title: "Home", artist: "Phillip Phillips", tags: 'B,D,R'},
+            { title: "Hopelessly Devoted to You", artist: "Grease", tags: 'B'},
+            { title: "How Deep is Your Love", artist: "The Bee Gees", tags: 'L,R'},
+            { title: "I Can See Clearly Now", artist: "Johnny Nash", tags: 'B,L,R'},
+            { title: "I Can't Make You Love Me", artist: "Bonnie Raitt", tags: 'R'},
+            { title: "I Lost a Friend", artist: "Finneas", tags: 'D'},
+            { title: "I Run to You", artist: "Lady A", tags: 'A'},
+            { title: "I Say a Little Prayer", artist: "Lianne La Havas", tags: 'D,R'},
+            { title: "I Wanna Stay Home", artist: "Jellyfish", tags: 'D,B'},
+            { title: "I Will Remember You", artist: "Sarah McLaughlin", tags: 'S'},
+            { title: "IDK You Yet", artist: "Alexander 23", tags: 'B'},
+            { title: "If I Ain't Got You", artist: "Alicia Keys", tags: 'B,R'},
+            { title: "If You Don't Know Me by Now", artist: "Melvin Gordon (Stan Taylor arr.)", tags: 'B'},
+            { title: "I'll be Around", artist: "Spininers", tags: 'D,R'},
+            { title: "I'll be There", artist: "Jackson Five (Mariah Carey arr.)", tags: 'B'},
+            { title: "I'll be There for You (Friends theme)", artist: "The Rembrandts", tags: 'B'},
+            { title: "I'm Eighteen", artist: "Alice Cooper", tags: 'D'},
+            { title: "I'm Gonna Be (500 Miles)", artist: "The Proclaimers", tags: 'B'},
+            { title: "I'm One", artist: "The Who", tags: 'D'},
+            { title: "I'm Yours", artist: "Jason Mraz", tags: 'B,L,N,R'},
+            { title: "Isn't She Lovely", artist: "Stevie Wonder", tags: 'B,L,N,R'},
+            { title: "It's Too late", artist: "Carole King", tags: 'D'},
+            { title: "Juice", artist: "Lizzo", tags: 'B'},
+            { title: "Just Give Me a Reason", artist: "Pink", tags: 'L,R'},
+            { title: "Just My Imagination", artist: "The Temptations", tags: 'B'},
+            { title: "Just The Way You Are", artist: "Billy Joel", tags: 'D,R'},
+            { title: "Just To See You Smile", artist: "Tim McGraw", tags: 'D'},
+            { title: "Killer Queen", artist: "Queen", tags: 'B'},
+            { title: "Killing Me Softly", artist: "Roberta Flack", tags: 'R'},
+            { title: "Kiss Me", artist: "Sixpense None the Richer", tags: 'B,N,R'},
+            { title: "Landslide", artist: "Fleetwood Mac", tags: 'B,R'},
+            { title: "Let's Stay Together", artist: "Al Green", tags: 'D,R'},
+            { title: "Life is a Highway", artist: "Rascal Flatts", tags: 'B'},
+            { title: "Lights", artist: "Journey", tags: 'B,L'},
+            { title: "Like I'm Gonna Lose You", artist: "Meghan Trainor & John Legend", tags: 'B,L,R'},
+            { title: "Live Forever", artist: "Drew Holcomb and the Neighbors", tags: 'D'},
+            { title: "Living on a Prayer", artist: "Bon Jovi", tags: 'B'},
+            { title: "Location Unknown", artist: "Honne & BEKA", tags: 'B'},
+            { title: "Lonely Boy", artist: "The Black Keys", tags: 'B,D,L'},
+            { title: "Long and Winding Road", artist: "The Beatles", tags: 'D'},
+            { title: "Long December", artist: "Counting Crows", tags: 'D'},
+            { title: "Love is a Losing Game", artist: "Amy Winehouse", tags: 'N'},
+            { title: "Love is a Wild Thing", artist: "Kacey Musgraves", tags: 'N,R'},
+            { title: "Love Reign O'er Me", artist: "The Who", tags: 'D'},
+            { title: "Love Song", artist: "Adele", tags: 'R'},
+            { title: "Love Story", artist: "Taylor Swift", tags: 'B,R'},
+            { title: "Lyin Eyes", artist: "Eagles", tags: 'D'},
+            { title: "Make You Feel My Love", artist: "Bob Dylan (Adele arr.)", tags: 'B,L,N,R'},
+            { title: "Man in the Mirror", artist: "Michael Jackson", tags: 'B'},
+            { title: "Manhattan", artist: "Sara Bareilles", tags: 'B'},
+            { title: "Marry You", artist: "Bruno Mars", tags: 'B,L,N,R'},
+            { title: "Me and Bobby McGee", artist: "Janis Joplin", tags: 'B,L'},
+            { title: "Meant To Be", artist: "Bebe Rexha and Florida Georgia Line", tags: 'D,R'},
+            { title: "Melissa", artist: "Alman Brothers", tags: 'D,R'},
+            { title: "Missing You", artist: "All Time Low", tags: 'B,D'},
+            { title: "More Today Than Yesterday", artist: "The Spiral Staircase", tags: 'B,D'},
+            { title: "My Cherie Amour", artist: "Stevie Wonder", tags: 'A'},
+            { title: "My Church", artist: "Maren Morris", tags: 'B,N'},
+            { title: "My Girl", artist: "The Temptations", tags: 'B,D,L,N,R'},
+            { title: "Natural Woman", artist: "Aretha Franklin", tags: 'L'},
+            { title: "Need You Now", artist: "Lady A", tags: 'B'},
+            { title: "Nervous", artist: "Gavin James", tags: 'B'},
+            { title: "Never Can Say Goodbye", artist: "Jackson 5", tags: 'N'},
+            { title: "Never Enough", artist: "The Greatest Showman", tags: 'B'},
+            { title: "Never Gonna Give You Up", artist: "Rick Astley", tags: 'B'},
+            { title: "Never Tear Us Apart", artist: "INXS", tags: 'B,D'},
+            { title: "New York State of Mind", artist: "Billy Joel", tags: 'B,R'},
+            { title: "Night Changes", artist: "One Direction", tags: 'B'},
+            { title: "Nowhere to Run", artist: "Martha Reeves and the Vandellas", tags: 'R'},
+            { title: "One Hand in My Pocket", artist: "Alanis Morissette", tags: 'L,R'},
+            { title: "One Man Band", artist: "Old Dominion", tags: 'B,D'},
+            { title: "Ooh Baby Baby", artist: "Smokey Robinson", tags: 'D,R'},
+            { title: "Out Here on my Own", artist: "Fame", tags: 'A'},
+            { title: "Peace Bomb", artist: "Eric Scott", tags: 'D'},
+            { title: "Peace of Mind", artist: "Boston", tags: 'B'},
+            { title: "Peaceful Easy Feeling", artist: "Eagles", tags: 'D'},
+            { title: "People Get Ready", artist: "Eva Casidy, Rod Stewart, Jeff Beck arr.", tags: 'B'},
+            { title: "Photograph", artist: "Ed Sheeran", tags: 'L,R'},
+            { title: "Poison and Wine", artist: "The Civil Wars", tags: 'R'},
+            { title: "Pretty Maids All in a Row", artist: "Eagles", tags: 'D'},
+            { title: "Put Your Records On", artist: "Corinne Bailey Rae", tags: 'B,N'},
+            { title: "Redneck Woman", artist: "Gretchen Wilson", tags: 'L'},
+            { title: "Reelin' in the Years", artist: "Steely Dan", tags: 'D'},
+            { title: "Ride", artist: "Twenty One Pilots", tags: 'B'},
+            { title: "Riptide", artist: "Vance Joy", tags: 'B'},
+            { title: "River", artist: "Leon Bridges", tags: 'D,R'},
+            { title: "Rocket Man", artist: "Elton John", tags: 'B'},
+            { title: "Rolling in the Deep", artist: "Adele", tags: 'R'},
+            { title: "Route 66", artist: "Chuck Berry", tags: 'B'},
+            { title: "Safe Place to Land", artist: "Sara Bareilles and John Legend", tags: 'R'},
+            { title: "Sara, Smile", artist: "Hall and Oats", tags: 'D'},
+            { title: "Saturday in the Park", artist: "Chicago", tags: 'S'},
+            { title: "Shallow", artist: "Bradley Cooper and Lady Gaga", tags: 'B,L,R'},
+            { title: "She Is Love", artist: "Parachute", tags: 'D'},
+            { title: "She Used to be Mine", artist: "Sara Bareilles (Waitress)", tags: 'B,N'},
+            { title: "She Will be Loved", artist: "Maroon 5", tags: 'B'},
+            { title: "Shower the People", artist: "James Taylor", tags: 'S'},
+            { title: "Sittin on the Dock of the Bay", artist: "Otis Redding", tags: 'R'},
+            { title: "Six Feet Under", artist: "Billie Eilish", tags: 'B'},
+            { title: "Slide", artist: "Goo Goo Dolls", tags: 'D,L,R'},
+            { title: "Smile", artist: "Nat King Cole arr.", tags: 'B,N'},
+            { title: "Snapback", artist: "Old Dominion", tags: 'B,D'},
+            { title: "So Far Away", artist: "Carole King", tags: 'B'},
+            { title: "Soak Up the Sun", artist: "Sheryl Crow", tags: 'B,L,R'},
+            { title: "Sola", artist: "Jessie Reyez", tags: 'A'},
+            { title: "Somebody Like You", artist: "Keith Urban", tags: 'D,L,R'},
+            { title: "Somebody To Love", artist: "Queen", tags: 'B'},
+            { title: "Something Just Like This", artist: "The Chainsmokers and Coldplay", tags: 'B,R'},
+            { title: "Somewhere Only We Know", artist: "Keane", tags: 'B,L,R'},
+            { title: "Somewhere Over the Rainbow", artist: "Ariana Grande arr.", tags: 'A'},
+            { title: "Stand By Me", artist: "Ben E. King", tags: 'B,L,N,R'},
+            { title: "Steal My Kisses", artist: "Ben Harper", tags: 'B'},
+            { title: "Still Haven't Found", artist: "U2", tags: 'B,D,L,R'},
+            { title: "Stressed Out", artist: "Twenty One Pilots", tags: 'B'},
+            { title: "Sunday Morning", artist: "Maroon 5", tags: 'B,L,N'},
+            { title: "Sunshine", artist: "Jonathan Edwards", tags: 'D'},
+            { title: "Sunshine On My Shoulders", artist: "John Denver", tags: 'D'},
+            { title: "Sweeet Caroline", artist: "Neal Diamond", tags: 'B,D'},
+            { title: "Tennessee Whiskey", artist: "Chris Stapleton", tags: 'B,R'},
+            { title: "That Thing You Do", artist: "The Oneders", tags: 'B,R'},
+            { title: "The Bed I Made", artist: "Allen Stone", tags: 'B'},
+            { title: "The Climb", artist: "Miley Cyrus", tags: 'L'},
+            { title: "The Joke", artist: "Brandi Carlile", tags: 'R'},
+            { title: "The Middle", artist: "Jimmy Eat World", tags: 'B,N'},
+            { title: "The Only Exception", artist: "Paramore", tags: 'B,N'},
+            { title: "The Way You Make Me Feel", artist: "Michael Jackson", tags: 'B,R'},
+            { title: "Thinking Out Loud", artist: "Ed Sheeran", tags: 'B,L,N,R'},
+            { title: "This City", artist: "Sam Fischer", tags: 'B'},
+            { title: "This Town", artist: "Niall Horan", tags: 'D'},
+            { title: "Time After Time", artist: "Cyndi Lauper", tags: 'B,R'},
+            { title: "Too Good at Goodbyes", artist: "Sam Smith", tags: 'L'},
+            { title: "Torn", artist: "Natalie Imbruglia", tags: 'B,L,R'},
+            { title: "Treasure", artist: "Bruno Mars", tags: 'B,N'},
+            { title: "Unaware", artist: "Allen Stone", tags: 'B'},
+            { title: "Unlonely", artist: "Jason Mraz", tags: 'B'},
+            { title: "Valerie", artist: "Amy Winehouse", tags: 'B,L,N,R'},
+            { title: "Ventura Highway", artist: "America", tags: 'D,R'},
+            { title: "Vineyard", artist: "Jackopierce", tags: 'D'},
+            { title: "Waiting on the World to Change", artist: "John Mayer", tags: 'B,N'},
+            { title: "Walking on Sunshine", artist: "Katrina and the Waves", tags: 'B,R'},
+            { title: "Waterfalls", artist: "T.L.C", tags: 'R'},
+            { title: "Watermellon Sugar", artist: "Harry Styles", tags: 'B'},
+            { title: "We Belong", artist: "Pat Benatar", tags: 'R'},
+            { title: "What You Won't Do For Love", artist: "Bobby Caldwell", tags: 'D,R'},
+            { title: "What's Going On?", artist: "Marvin Gaye", tags: 'R'},
+            { title: "What's Up?", artist: "Four Non Blondes", tags: 'L,N,R'},
+            { title: "When We Were Young", artist: "Adele", tags: 'A'},
+            { title: "White Liar", artist: "Miranda Lambert", tags: 'L'},
+            { title: "Who Says You Can't Go Home", artist: "Bon Jovi & Jennifer Nettles", tags: 'B'},
+            { title: "Why'd You Only Call Me When You're High", artist: "Arctic Monkeys", tags: 'B'},
+            { title: "Wildfire", artist: "Michael Martin Murphey", tags: 'D'},
+            { title: "Will You Still Love Me Tomorrow", artist: "Carole King", tags: 'B,L'},
+            { title: "Wonderful Tonight", artist: "Eric Clapton", tags: 'D'},
+            { title: "Wonderful World", artist: "Cam Cooke", tags: 'B,R'},
+            { title: "Wonderwall", artist: "Oasis", tags: 'D'},
+            { title: "Yellow", artist: "Coldplay", tags: 'B,R'},
+            { title: "Yes, I'm Ready", artist: "Barbara Mason", tags: 'D'},
+            { title: "Yesterday", artist: "The Beatles", tags: 'B,N'},
+            { title: "You Can't Always Get What You Want", artist: "Rolling Stones", tags: 'B'},
+            { title: "You Get What You Give", artist: "New Radicals", tags: 'B,R'},
+            { title: "You Know I'm No Good", artist: "Amy Winehouse", tags: 'N'},
+            { title: "You Say", artist: "Lauren Daigle", tags: 'R'},
+            { title: "You Will Find Me", artist: "Andrew Ripp", tags: 'D'},
+            { title: "Your Song", artist: "Elton John", tags: 'D'},
+            { title: "You've Got a Friend", artist: "James Taylor", tags: 'B,D'}
+        ];
+
+        $(function() {
+
+            $("#selSinger").change(function() {
+                let singerTag = $("#selSinger").val();
+                populateSongList(singerTag);
+            });
+
+            $('input[type=radio][name=radSinger]').change(function() {
+                let singerTag = this.value;
+                populateSongList(singerTag);
+            });
+
+        });
+
+        function populateSongList(tag) {
+            
+            $("#ulSongs").empty();
+
+            songs.forEach((num, index) => {
+                let title = songs[index].title;
+                let artist = songs[index].artist;
+                let tagsCsv = songs[index].tags;
+                let tags = tagsCsv.split(',');
+
+                let titleAnchorTag = "<a href='mailto:DaveWeberMusic@gmail.com?subject=Song request: " + encodeURIComponent(title).replace(/'/g, "%27") + "&body=Please play " + encodeURIComponent(title).replace(/'/g, "%27") + " by " + encodeURIComponent(artist).replace(/'/g, "%27") + ".'>" + title + "</a>";
+
+                if (! tag) {
+                    $("#ulSongs").append("<li>" + titleAnchorTag +  " -- <em>" + artist + "</em></li>");
+                } else {
+                    if (arrayContains(tags, "D") || (arrayContains(tags, tag))) {
+                        $("#ulSongs").append("<li>" + titleAnchorTag +  " -- <em>" + artist + "</em></li>");
+                    }
+                }
+            });
+            $("#pRequestInstruction").show();
+        }
+
+        function arrayContains(arr, val) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] == val) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+    </script>
 </body>
 </html>
