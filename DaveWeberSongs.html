@@ -329,7 +329,7 @@
                 let tagsCsv = songs[index].tags;
                 let tags = tagsCsv.split(',');
 
-                let titleAnchorTag = "<a href='mailto:DaveWeberMusic@gmail.com?subject=Song request: " + title + "&body=Please play " + title + " by " + artist + ".'>" + title + "</a>";
+                let titleAnchorTag = "<a href='mailto:DaveWeberMusic@gmail.com?subject=Song request: " + encodeURIComponent(title).replace(/'/g, "%27") + "&body=Please play " + encodeURIComponent(title).replace(/'/g, "%27") + " by " + encodeURIComponent(artist).replace(/'/g, "%27") + ".'>" + title + "</a>";
 
                 if (! tag) {
                     $("#ulSongs").append("<li>" + titleAnchorTag +  " -- <em>" + artist + "</em></li>");
