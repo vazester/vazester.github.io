@@ -36,7 +36,7 @@
         <h1 style="float: left; margin-left: 10px;">Dave Weber Music Facebook</h1>
     </div>
 
-    <div>V4</div>
+    <div>V6</div>
     <p>Dave uses Facebook as the primary means of communicating with those interested his music.</p>
 
     <p>The name of Dave's Facebook music page is <strong><em>Dave Weber Music</em></strong>.</p>
@@ -72,11 +72,43 @@
             setTimeout(() => {
                 try {
                     // Try to go directly to the URL without using the link
+                    alert("Setting location.href");
                     location.href = url;
                 } catch (err) {
                     alert("Got an error trying to jump into Facebook: " + err);
                 }
             }, 10000);
+            
+            setTimeout(() => {
+                try {
+                    // Try to go directly to the URL without using the link
+                    alert("Calling click");
+                    $("#aLink").click();
+                } catch (err) {
+                    alert("Got an error trying to jump into Facebook: " + err);
+                }
+            }, 15000);
+            
+            setTimeout(() => {
+                try {
+                    // Try to go directly to the URL without using the link
+                    alert("Calling trigger");
+                    $("#aLink").trigger("click");
+                } catch (err) {
+                    alert("Got an error trying to jump into Facebook: " + err);
+                }
+            }, 20000);
+            
+            
+            setTimeout(() => {
+                try {
+                    // Try to go directly to the URL without using the link
+                    alert("Setting window.location");
+                    window.location = url;
+                } catch (err) {
+                    alert("Got an error trying to jump into Facebook: " + err);
+                }
+            }, 25000);
         });
 
     </script>
