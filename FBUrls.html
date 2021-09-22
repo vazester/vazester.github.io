@@ -12,10 +12,12 @@
             var userAgent = navigator.userAgent.toLowerCase();
             var url = null;
         
+            alert(userAgent);
+            
             if (userAgent.indexOf("android") >= 0) {
                 alert("Android");
                 url = "fb://page/" + pageId;
-            } else if (userAgent.indexOf("apple") >= 0 || userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
+            } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
                 alert("IOS");
                 url = "fb://page/?" + pageId;
             } else {
