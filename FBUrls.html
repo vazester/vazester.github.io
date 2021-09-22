@@ -1,9 +1,30 @@
-<a href="https://facebook.com/225763927931155">Facebook using browser</a><br/>
-<a href="fb://page/225763927931155">Facebook using Android</a><br />
-<a href="fb://page/?225763927931155">Facebook using IOS</a><br />
-
-<script>
-  alert(navigator.userAgent);
-</script>
-
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dave Weber Music Facebook Page</title>
+    </head>
+    <body>
+        <script>
+            var pageId = "225763927931155";
+        
+            var userAgent = navigator.userAgent.toLowerCase();
+            var url = null;
+        
+            if (userAgent.indexOf("android") >= 0) {
+                alert("Android");
+                url = "fb://page/" + pageId;
+            } else if (userAgent.indexOf("apple") >= 0 || userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
+                alert("IOS");
+                url = "fb://page/?" + pageId;
+            } else {
+                alert("Computer");
+                url = "https://facebook.com/" + pageId;
+            }
+        
+            location.href = url;
+        
+        </script>
+    </body>
+</html>
