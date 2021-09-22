@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dave Weber Song List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+        }
+        li {
+            font-size: 14px;
+        }
+        label {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .instruction {
+            font-size: 11px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div style="overflow:auto">
+        <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
+        <h1 style="float: left; margin-left: 10px;">Dave Weber Music Facebook</h1>
+    </div>
+
+    <p>Dave uses Facebook as the primary means of communicating with those interested his music.</p>
+
+    <p>The name of Dave's Facebook music page is <strong><em>Dave Weber Music</em></strong>.</p>
+
+    <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> page will keep you informed as to his gig schedule, videos, and other news.</p>
+
+    <p><a id="aLink" href="https://facebook.com/davewebermusic">Jump to the Dave Weber Music Facebook page</a></p>
+
+    <script>
+        $(function() {
+            var pageId = "225763927931155";
+        
+            var userAgent = navigator.userAgent.toLowerCase();
+            var url = null;
+        
+            if (userAgent.indexOf("android") >= 0) {
+                // Android
+                url = "fb://page/" + pageId;
+
+
+            } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
+                // IOS
+                url = "fb://page/?" + pageId;
+
+            } else {
+                // Computer
+                url = "https://facebook.com/davewebermusic";
+            }
+        
+            // Set where the link goes
+            $("aLink").attr("href", url);
+
+            setTimeout(() => {
+                try {
+                    // Try to go directly to the URL without using the link
+                    location.href = url;
+                } catch (err) {
+                    alert("Got an error trying to jump into Facebook: " + err);
+                }
+            }, 10000);
+        });
+
+    </script>
+</body>
+</html>
