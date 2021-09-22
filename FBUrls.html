@@ -4,8 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dave Weber Music Facebook Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
+        <div>
+        <a id="aLink" href="https://www.google.com">Click here</a>
+        </div>
+        
         <script>
             var pageId = "225763927931155";
         
@@ -26,6 +31,8 @@
             }
         
             location.href = url;
+            
+            $("#aLink").attribute("href", url);
         
         </script>
     </body>
