@@ -8,11 +8,11 @@
     </head>
     <body>
         <div>
-            version 10<br/>
+            version 12<br/>
             
-            <a id="aLink" href="https://www.google.com">Click here</a><br />
+            <a id="aLink" href="https://www.google.com" target="_top">Click here</a><br />
             
-            <a href="fb://facewebmodal/f?href=https://www.facebook.com/225763927931155">Facewebmodal link</a><br />
+            <a id="aPredefined" href="fb://facewebmodal/f?href=https://www.facebook.com/225763927931155">Facewebmodal link</a><br />
             
         </div>
         
@@ -41,9 +41,13 @@
 
                 setTimeout(function() {
                     try {
-                        alert('Jumping to ' + url);
-                        $("#aLink").attr("href", url);
-                        $('#aLink')[0].click();
+//                        alert('Jumping to ' + url);
+//                        $("#aLink").attr("href", url);
+//                        $('#aLink')[0].click();
+                        
+                        alert("Jumping to predefined");
+                        $("#aPredefined')[0].click();
+                          
                         // document.querySelector('#aLink').click();
                     } catch (error) {
                         alert("Got error");
