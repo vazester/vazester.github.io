@@ -8,7 +8,7 @@
     </head>
     <body>
         <div>
-            version 5<br/>
+            version 6<br/>
             
             <a id="aLink" href="https://www.google.com">Click here</a><br />
             
@@ -17,31 +17,33 @@
         </div>
         
         <script>
-            var pageId = "225763927931155";
-        
-            var userAgent = navigator.userAgent.toLowerCase();
-            var url = null;
-        
-            alert(userAgent);
-            
-            if (userAgent.indexOf("android") >= 0) {
-                alert("Android");
-                url = "fb://page/" + pageId;
-            } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
-                alert("IOS");
-                url = "fb://page/?" + pageId;
-            } else {
-                alert("Computer");
-                url = "https://facebook.com/" + pageId;
-            }
-            
-            alert(url);
-            
-            $("#aLink").attr("href", url);
-            
-            $('#aLink')[0].click();
-            
-            // document.querySelector('#aLink').click();
+            $(function() {
+                var pageId = "225763927931155";
+
+                var userAgent = navigator.userAgent.toLowerCase();
+                var url = null;
+
+                alert(userAgent);
+
+                if (userAgent.indexOf("android") >= 0) {
+                    alert("Android");
+                    url = "fb://page/" + pageId;
+                } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
+                    alert("IOS");
+                    url = "fb://page/?" + pageId;
+                } else {
+                    alert("Computer");
+                    url = "https://facebook.com/" + pageId;
+                }
+
+                alert(url);
+
+                $("#aLink").attr("href", url);
+
+                $('#aLink')[0].click();
+
+                // document.querySelector('#aLink').click();
+            ));
         
         </script>
     </body>
