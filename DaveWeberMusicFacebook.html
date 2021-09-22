@@ -14,6 +14,11 @@
         h1 {
             font-size: 22px;
         }
+        .instruction {
+            font-size: 13px;
+            margin-left: 15px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +34,8 @@
 
     <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
 
+    <p id="pMobileInstruction" class="instruction" style="display:none">This will open in the Facebook App.</p>
+    
     <script>
         $(function() {
             var pageId = "225763927931155";
@@ -39,10 +46,12 @@
             if (userAgent.indexOf("android") >= 0) {
                 // Android
                 url = "fb://page/" + pageId;
+                $("#pMobileInstruction").show();
 
             } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
                 // IOS
                 url = "fb://page/?" + pageId;
+                $("#pMobileInstruction").show();
 
             } else {
                 // Computer
