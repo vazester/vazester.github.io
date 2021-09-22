@@ -8,7 +8,7 @@
     </head>
     <body>
         <div>
-            version 1<br/>
+            version 2<br/>
         <a id="aLink" href="https://www.google.com">Click here</a>
         </div>
         
@@ -32,7 +32,10 @@
             }
             
             $("#aLink").attr("href", url);
-            document.querySelector('#aLink').click();
+            
+            $('#aLink')[0].click();
+            
+            // document.querySelector('#aLink').click();
         
         </script>
     </body>
