@@ -8,7 +8,7 @@
     </head>
     <body>
         <div>
-            version 8<br/>
+            version 9<br/>
             
             <a id="aLink" href="https://www.google.com">Click here</a><br />
             
@@ -28,9 +28,12 @@
                 if (userAgent.indexOf("android") >= 0) {
                     alert("Android");
                     url = "fb://page/" + pageId;
+                    url = "fb://facewebmodal/f?href=https://www.facebook.com/225763927931155";
+                    
                 } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
                     alert("IOS");
                     url = "fb://page/?" + pageId;
+                    
                 } else {
                     alert("Computer");
                     url = "https://facebook.com/" + pageId;
