@@ -76,8 +76,8 @@
                 alert("Android");
                 setTimeout(function() { 
                     try {
-                        alert("Clicking");
-                        $("#aLink").click();
+                        alert("Triggering a click; url = " + url);
+                        $("#aLink").trigger("click");
                     } catch (err) {
                         alert("Unable to launch Facebook " + err);
                     }
