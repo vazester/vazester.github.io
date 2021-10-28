@@ -41,6 +41,8 @@
         
     <p id="pBrowser"></p>
     
+    <p id="pAgent"></p>
+    
     <!--
     <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
     <p><a href="fb://page?225763927931155">fb://page?225763927931155</a></p>
@@ -58,11 +60,17 @@
             var pageId = "225763927931155";
         
             var userAgent = navigator.userAgent.toLowerCase();
+            
+            $("#pAgent").text(userAgent);
+            
             // alert(userAgent);
             var url = null;
         
             if (userAgent.indexOf("android") >= 0) {
                 // Android
+                
+                $("#pBrowser").text("Android");
+                
                 url = "fb://page/" + pageId;
                 $("#pMobileInstruction").show();
 
@@ -88,6 +96,9 @@
 
             } else {
                 // Computer
+                
+               $("#pBrowser").text("Computer");
+                
                 url = "https://facebook.com/davewebermusic";
             }
         
