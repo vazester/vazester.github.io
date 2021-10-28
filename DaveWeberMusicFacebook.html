@@ -71,16 +71,18 @@
         
             // Set where the link goes
             $("#aLink").attr("href", url);
+            
+            setTimeout(function() { alert("timer"); }, 2000);
 
-            setTimeout(
-                    function() {
-                        try {
-                            $("#aLink").click();
-                        } catch(err) {
-                            alert("Got an error trying to jump into Facebook: " + err);
-                        }
-                    },
-                    5000);
+            //setTimeout(
+            //        function() {
+            //            try {
+            //                $("#aLink").click();
+            //            } catch(err) {
+            //                alert("Got an error trying to jump into Facebook: " + err);
+            //            }
+            //        },
+            //        5000);
             
             // setTimeout(() => {
             //     try {
