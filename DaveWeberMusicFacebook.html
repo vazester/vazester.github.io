@@ -71,12 +71,12 @@
 
             } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
                 // IOS
-                if (true) {
-                    // Safari
-                    url = "fb://id/?" + pageId;
-                } else {
-                    // Chrome
+                if (userAgent.indexof("crios") >= 0) {
+                    // Chrome on IOS
                     url = "fb://page?id=" + pageId;
+                } else {
+                    // Safari on IOS
+                    url = "fb://id/?" + pageId;
                 }
 
                 $("#pMobileInstruction").show();
