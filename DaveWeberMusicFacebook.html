@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dave Weber Music Facebook</title>
+    <title>Dave Weber Music Facebook Launcher</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
@@ -34,14 +34,7 @@
     <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
 
     <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
-    
-    <p><a href="fb://id/?225763927931155">fb://id/?225763927931155</a></p>
-    
-    <p id="pUrl"></p>
-        
-    <p id="pBrowser"></p>
-    
-    <p id="pAgent"></p>
+    <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
     
     <!--
     <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
@@ -53,61 +46,29 @@
     <p><a href="http://pili.app/pg/126hQw0Cx">http://pili.app/pg/126hQw0Cx</p>
     <p><a href="https://pili.app/pg/126hQw0Cx">https://pili.app/pg/126hQw0Cx</p> -->
             
-    <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
-    
     <script>
         $(function() {
             var pageId = "225763927931155";
-        
             var userAgent = navigator.userAgent.toLowerCase();
-            
-            $("#pAgent").text(userAgent);
-            
-            // alert(userAgent);
             var url = null;
         
             if (userAgent.indexOf("android") >= 0) {
-                // Android
-                
-                $("#pBrowser").text("Android");
-                
+                // Android            
                 url = "fb://page/" + pageId;
                 $("#pMobileInstruction").show();
 
             } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0 || userAgent.indexOf("macintosh") >= 0) {
-                // IOS
-                if (userAgent.indexOf("crios") >= 0) {
-                    // Chrome on IOS
-                    // alert("Chrome on IOS");
-                    
-                    $("#pBrowser").text("Chrome on IOS");
-                    
-                    url = "fb://page?id=" + pageId;
-                } else {
-                    // Safari on IOS
-                    // alert("Safari on IOS");
-                    
-                   $("#pBrowser").text("Safari on IOS 2");
-                    
-                    //  url = "fb://id/?" + pageId;
-                    url = "fb://page?id=" + pageId;
-                    
-                }
-
+                // IOS - works for Safari or Chrome
+                url = "fb://page?id=" + pageId;
                 $("#pMobileInstruction").show();
 
             } else {
-                // Computer
-                
-               $("#pBrowser").text("Computer");
-                
+                // Computer         
                 url = "https://facebook.com/davewebermusic";
             }
         
             // Set where the link goes
             $("#aLink").attr("href", url);
-            
-            $("#pUrl").text(url);
 
             // setTimeout(() => {
             //     try {
