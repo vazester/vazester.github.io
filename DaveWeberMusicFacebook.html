@@ -36,6 +36,8 @@
     <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
     <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
     
+    <p>We will automatically jump into Facebook shortly.</p>
+    
     <!--
     <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
     <p><a href="fb://page?225763927931155">fb://page?225763927931155</a></p>
@@ -70,6 +72,16 @@
             // Set where the link goes
             $("#aLink").attr("href", url);
 
+            setTimeout(
+                    function() {
+                        try {
+                            $("#aLink").click();
+                        } catch(err) {
+                            alert("Got an error trying to jump into Facebook: " + err);
+                        }
+                    },
+                    5000);
+            
             // setTimeout(() => {
             //     try {
             //         // Try to go directly to the URL without using the link
