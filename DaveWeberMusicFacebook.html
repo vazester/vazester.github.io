@@ -72,7 +72,7 @@
             // Set where the link goes
             $("#aLink").attr("href", url);
             
-            setTimeout(function() { alert("timer"); }, 2000);
+            setTimeout(function() { alert("clicking"); $("#aLink").click(); alert("Just did the click"); }, 2000);
 
             //setTimeout(
             //        function() {
