@@ -35,7 +35,7 @@
 
     <p id="pAutoMessage" style="display:none">We will automatically launch Facebook in a few seconds or you may click the button below.</p>
     
-    <p><a id="aLink" href="https://facebook.com/davewebermusic"><img src="ContinueWithFacebook.png" height="40px" /></a></p>
+    <p style="margin-left:50px"><a id="aLink" href="https://facebook.com/davewebermusic"><img src="ContinueWithFacebook.png" height="40px" /></a></p>
     
     <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
             
@@ -69,7 +69,7 @@
                 // With all platforms besides Android, we can directly jump into Facebook without showing this intermediate page
                 setTimeout(function() { 
                     location.href = url;
-                }, 5000);
+                }, 10000);
             }
           
         });
