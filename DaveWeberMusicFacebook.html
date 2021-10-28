@@ -39,6 +39,8 @@
     
     <p id="pUrl"></p>
         
+    <p id="pBrowser"></p>
+    
     <!--
     <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
     <p><a href="fb://page?225763927931155">fb://page?225763927931155</a></p>
@@ -69,10 +71,16 @@
                 if (userAgent.indexOf("crios") >= 0) {
                     // Chrome on IOS
                     // alert("Chrome on IOS");
+                    
+                    $("#pBrowser").text("Chrome on IOS");
+                    
                     url = "fb://page?id=" + pageId;
                 } else {
                     // Safari on IOS
                     // alert("Safari on IOS");
+                    
+                   $("#pBrowser").text("Safari on IOS");
+                    
                     url = "fb://id/?" + pageId;
                 }
 
