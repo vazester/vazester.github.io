@@ -72,8 +72,9 @@
             // Set where the link goes
             $("#aLink").attr("href", url);
             
-            setTimeout(function() { alert("clicking"); $("#aLink").click(); alert("Just did the click"); }, 2000);
-
+            // setTimeout(function() { alert("clicking"); $("#aLink").click(); alert("Just did the click"); }, 2000);
+            setTimeout(function() { alert("setting URL"); location.href = url; alert("Just set the URL"); }, 2000);
+            
             //setTimeout(
             //        function() {
             //            try {
