@@ -34,6 +34,10 @@
     <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
 
     <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
+    
+    <p><a href="fb://id/?225763927931155">fb://id/?225763927931155</a></p>
+    
+    <p id="pUrl"></p>
         
     <!--
     <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
@@ -81,6 +85,8 @@
         
             // Set where the link goes
             $("#aLink").attr("href", url);
+            
+            $("#pUrl").text(url);
 
             // setTimeout(() => {
             //     try {
