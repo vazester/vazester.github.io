@@ -24,29 +24,19 @@
     </style>
 </head>
 <body>
-    <div style="overflow:auto">
-        <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
-        <h1 style="float: left; margin-left: 10px;">Dave Weber Facebook</h1>
+    <div id="divPage" style="display:none">
+        <div style="overflow:auto">
+            <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
+            <h1 style="float: left; margin-left: 10px;">Dave Weber Facebook</h1>
+        </div>
+
+        <p>Dave uses Facebook to communicate with those interested in his music.</p>
+
+        <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
+
+        <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
+        <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
     </div>
-
-    <p>Dave uses Facebook to communicate with those interested in his music.</p>
-
-    <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
-
-    <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
-    <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
-    
-    <p>We will automatically jump into Facebook shortly.</p>
-    
-    <!--
-    <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
-    <p><a href="fb://page?225763927931155">fb://page?225763927931155</a></p>
-    <p><a href="fb://id/?225763927931155">fb://id/?225763927931155</a></p>
-    <p><a href="fb://page/225763927931155">fb://page/225763927931155</a></p>
-    <p><a href="fb://profile/225763927931155">fb://profile/225763927931155</a></p>
-    <p><a href="fb://page?id=225763927931155">fb://page?id=225763927931155</a></p>
-    <p><a href="http://pili.app/pg/126hQw0Cx">http://pili.app/pg/126hQw0Cx</p>
-    <p><a href="https://pili.app/pg/126hQw0Cx">https://pili.app/pg/126hQw0Cx</p> -->
             
     <script>
         $(function() {
@@ -73,61 +63,22 @@
             $("#aLink").attr("href", url);
             
             if (userAgent.indexOf("android") >= 0) {
-                alert("Android");
-                setTimeout(function() { 
-                    try {
-                        // alert("Triggering a click; url = " + url);
-                        // $("#aLink").trigger("click");
-                        alert("Setting document.location to " + url);
-                        document.location = url;
-                    } catch (err) {
-                        alert("Unable to launch Facebook " + err);
-                    }
-                }, 2000);
+                // With Anroid, for some reason, we cannot automatically jump into Facebook. So we must show the page
+                // and let the user click.
+                $("#divPage").show();
                 
-            } else {
-                alert("Not Android");
+            } else {      
+                // With all platforms besides Android, we can directly jump into Facebook without showing this intermediate page
                 setTimeout(function() { 
                     try {
                         location.href = url;
                     } catch (err) {
-                        alert("Unable to launch Facebook " + err);
+                        // We weren't able to directly jump into Facebook. Just show the page in this case too so the user can click.
+                        $("#divPage").show();
                     }
                 }, 2000);
             }
-            
-                            
-            // setTimeout(function() { alert("clicking"); $("#aLink").click(); alert("Just did the click"); }, 2000);
-
-            
-            //setTimeout(
-            //        function() {
-            //            try {
-            //                $("#aLink").click();
-            //            } catch(err) {
-            //                alert("Got an error trying to jump into Facebook: " + err);
-            //            }
-            //        },
-            //        5000);
-            
-            // setTimeout(() => {
-            //     try {
-            //         // Try to go directly to the URL without using the link
-            //         location.href = url;
-            //     } catch (err) {
-            //         alert("Got an error trying to jump into Facebook: " + err);
-            //     }
-            // }, 0);
-            
-            // setTimeout(() => {
-            //     try {
-            //         // Try to go directly to the URL without using the link
-            //         $("#aLink").click();
-            //     } catch (err) {
-            //         alert("Got an error trying to jump into Facebook: " + err);
-            //     }
-            // }, 0);
-            
+          
         });
 
     </script>
