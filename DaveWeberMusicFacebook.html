@@ -76,9 +76,10 @@
                 alert("Android");
                 setTimeout(function() { 
                     try {
-                        location.href = url;
+                        alert("Clicking");
+                        $("#aLink").click();
                     } catch (err) {
-                        alert(err);
+                        alert("Unable to launch Facebook " + err);
                     }
                 }, 2000);
                 
@@ -88,7 +89,7 @@
                     try {
                         location.href = url;
                     } catch (err) {
-                        alert(err);
+                        alert("Unable to launch Facebook " + err);
                     }
                 }, 2000);
             }
