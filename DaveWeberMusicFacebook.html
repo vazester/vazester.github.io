@@ -34,15 +34,6 @@
     <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
 
     <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
-
-    <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
-    <p><a href="fb://page?225763927931155">fb://page?225763927931155</a></p>
-    <p><a href="fb://id/?225763927931155">fb://id/?225763927931155</a></p>
-    <p><a href="fb://page/225763927931155">fb://page/225763927931155</a></p>
-    <p><a href="fb://profile/225763927931155">fb://profile/225763927931155</a></p>
-    <p><a href="fb://page?id=225763927931155">fb://page?id=225763927931155</a></p>
-    <p><a href="http://pili.app/pg/126hQw0Cx">http://pili.app/pg/126hQw0Cx</p>
-    <p><a href="https://pili.app/pg/126hQw0Cx">https://pili.app/pg/126hQw0Cx</p>
         
     <!--
     <p><a href="fb://page/?225763927931155">fb://page/?225763927931155</a></p>
@@ -61,7 +52,7 @@
             var pageId = "225763927931155";
         
             var userAgent = navigator.userAgent.toLowerCase();
-            alert(userAgent);
+            // alert(userAgent);
             var url = null;
         
             if (userAgent.indexOf("android") >= 0) {
@@ -73,11 +64,11 @@
                 // IOS
                 if (userAgent.indexOf("crios") >= 0) {
                     // Chrome on IOS
-                    alert("Chrome on IOS");
+                    // alert("Chrome on IOS");
                     url = "fb://page?id=" + pageId;
                 } else {
                     // Safari on IOS
-                    alert("Safari on IOS");
+                    // alert("Safari on IOS");
                     url = "fb://id/?" + pageId;
                 }
 
