@@ -24,19 +24,19 @@
     </style>
 </head>
 <body>
-    <div id="divPage" style="display:none">
-        <div style="overflow:auto">
-            <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
-            <h1 style="float: left; margin-left: 10px;">Dave Weber Facebook</h1>
-        </div>
-
-        <p>Dave uses Facebook to communicate with those interested in his music.</p>
-
-        <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
-
-        <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
-        <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
+    <div style="overflow:auto">
+        <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
+        <h1 style="float: left; margin-left: 10px;">Dave Weber Facebook</h1>
     </div>
+
+    <p>Dave uses Facebook to communicate with those interested in his music.</p>
+
+    <p>Clicking <strong><em>Like</em></strong> on the <strong><em>Dave Weber Music</em></strong> Facebook page will keep you informed of his gig schedule, audio/video releases, and other news.</p>
+
+    <p id="pAutoMessage" class="instruction" style="display:none">We will automatically launch Facebook in a few seconds or you may click the link below.</p>
+        
+    <p><a id="aLink" href="https://facebook.com/davewebermusic">Open the <strong><em>Dave Weber Music</em></strong> Facebook page</a></p>
+    <p id="pMobileInstruction" class="instruction" style="display:none">* This will open in the Facebook App.</p>
             
     <script>
         $(function() {
@@ -53,30 +53,22 @@
                 // IOS - works for Safari or Chrome
                 url = "fb://page?id=" + pageId;
                 $("#pMobileInstruction").show();
+                $("#pAutoMessage").show();
 
             } else {
                 // Computer         
                 url = "https://facebook.com/davewebermusic";
+                $("#pAutoMessage").show();
             }
         
             // Set where the link goes
             $("#aLink").attr("href", url);
             
-            if (userAgent.indexOf("android") >= 0) {
-                // With Anroid, for some reason, we cannot automatically jump into Facebook. So we must show the page
-                // and let the user click.
-                $("#divPage").show();
-                
-            } else {      
+            if (userAgent.indexOf("android") < 0) {   
                 // With all platforms besides Android, we can directly jump into Facebook without showing this intermediate page
                 setTimeout(function() { 
-                    try {
-                        location.href = url;
-                    } catch (err) {
-                        // We weren't able to directly jump into Facebook. Just show the page in this case too so the user can click.
-                        $("#divPage").show();
-                    }
-                }, 2000);
+                    location.href = url;
+                }, 5000);
             }
           
         });
