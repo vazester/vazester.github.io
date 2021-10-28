@@ -61,6 +61,7 @@
             var pageId = "225763927931155";
         
             var userAgent = navigator.userAgent.toLowerCase();
+            alert(userAgent);
             var url = null;
         
             if (userAgent.indexOf("android") >= 0) {
@@ -70,8 +71,14 @@
 
             } else if (userAgent.indexOf("iphone") >= 0 || userAgent.indexOf("ipad") >=  0 || userAgent.indexOf("ios") >= 0) {
                 // IOS
-                // url = "fb://page/?" + pageId;
-                url = "fb://page?id=" + pageId;
+                if (true) {
+                    // Safari
+                    url = "fb://id/?" + pageId;
+                } else {
+                    // Chrome
+                    url = "fb://page?id=" + pageId;
+                }
+
                 $("#pMobileInstruction").show();
 
             } else {
