@@ -72,8 +72,30 @@
             // Set where the link goes
             $("#aLink").attr("href", url);
             
+            if (userAgent.indexOf("android") >= 0) {
+                alert("Android");
+                setTimeout(function() { 
+                    try {
+                        location.href = url;
+                    } catch (err) {
+                        alert(err);
+                    }
+                }, 2000);
+                
+            } else {
+                alert("Not Android");
+                setTimeout(function() { 
+                    try {
+                        location.href = url;
+                    } catch (err) {
+                        alert(err);
+                    }
+                }, 2000);
+            }
+            
+                            
             // setTimeout(function() { alert("clicking"); $("#aLink").click(); alert("Just did the click"); }, 2000);
-            setTimeout(function() { location.href = url; }, 2000);
+
             
             //setTimeout(
             //        function() {
