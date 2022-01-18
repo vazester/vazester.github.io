@@ -33,7 +33,7 @@
 <body>
     <div style="overflow:auto">
         <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
-        <h1 style="float: left; margin-left: 10px;">Dave Weber Music Song List</h1>
+        <h1 style="float: left; margin-left: 10px;">Dave Weber Music <span id="spanSongList">Song List</span></h1>
     </div>
 
     <p>Select Dave's singing partner or choose <em>Solo</em>:</p>
@@ -337,6 +337,11 @@
             $('input[type=radio][name=radSinger]').change(function() {
                 let singerTag = this.value;
                 populateSongList(singerTag);
+            });
+		
+            alert('Setting up click handler #');
+            $('#spanSongList').click(function() {
+                alert('Clicked');
             });
 
         });
