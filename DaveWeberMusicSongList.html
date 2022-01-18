@@ -33,7 +33,7 @@
 <body>
     <div style="overflow:auto">
         <img style="float:left" src="DaveWeberMusicSocialMediaRedSquare.jpg" height="50px">
-        <h1 style="float: left; margin-left: 10px;">Dave Weber Music <span id="spanSongList">Song List</span></h1>
+        <h1 style="float: left; margin-left: 10px;">Dave Weber Music Song List</h1>
     </div>
 
     <p>Select Dave's singing partner or choose <em>Solo</em>:</p>
@@ -41,7 +41,9 @@
     <label><input type="radio" id="radSinger" name="radSinger" value="R">Rebecca</label>
     <label><input type="radio" id="radSinger" name="radSinger" value="L">Lauren</label>
     <label><input type="radio" id="radSinger" name="radSinger" value="N">Daniela</label>
-    <label><input type="radio" id="radSinger" name="radSinger" value="D"><em>Solo</em></label>
+    <label><input type="radio" id="radSinger" name="radSinger" value="D"><em>Solo</em></label> <br /><br />
+    
+    <a id="aShowAll" href="javascript:void()">Show me everything</a>
 
     <p id="pRequestInstruction" style="display:none;">Click on the song you wish to request via email.</p>
 
@@ -339,9 +341,8 @@
                 populateSongList(singerTag);
             });
 		
-            alert('Setting up click handler #');
-            $('#spanSongList').click(function() {
-                alert('Clicked');
+            $('#aShowAll').click(function() {
+                alert('All');
             });
 
         });
