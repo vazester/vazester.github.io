@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <h1>Dave Weber Music Song List</h1>
+    <h1>Dave Weber Music <span id="spanSongList">Song List</span></h1>
 
     <p>Select Dave's singing partner below.<br>
         <span class="instruction">Or, if Dave is performing alone, choose <em>Dave solo</em>.</span></p>
@@ -314,6 +314,11 @@
             $('input[type=radio][name=radSinger]').change(function() {
                 let singerTag = this.value;
                 populateSongList(singerTag);
+            });
+            
+            alert('Setting up click handler');
+            $('spanSongList').click(function() {
+                alert('Clicked');
             });
 
         });
